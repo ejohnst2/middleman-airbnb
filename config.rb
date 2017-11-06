@@ -7,6 +7,10 @@ activate :sprockets
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "home/*", :layout => :layout
+page "team/*", :layout => :layout
+
+
 
 configure :build do
   activate :minify_css
